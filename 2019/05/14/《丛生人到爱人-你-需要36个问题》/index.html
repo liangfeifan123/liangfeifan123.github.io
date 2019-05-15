@@ -403,11 +403,11 @@
     <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
     <script>
         var gitment = new Gitment({
-            owner: '',
-            repo: '',
+            owner: 'liangfeifan123',
+            repo: 'gitment',
             oauth: {
-                client_id: '',
-                client_secret: '',
+                client_id: '{{ theme.gitment.client_id }}',
+                client_secret: '{{ theme.gitment.client_secret }}',
             },
         })
         gitment.render('comments')
